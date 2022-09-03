@@ -105,9 +105,8 @@ a {
 
 .container-main .right-space .title {
     width: 80%;
-    height: 40%;
-    /*     border: 1px solid white;
- */
+    height: 30%;
+
     font-size: 5.5rem;
     text-align: justify;
 
@@ -120,13 +119,11 @@ a {
 }
 
 .container-main .right-space .description {
-    /*     border: 1px solid white;
- */
     width: 80%;
-    margin-top: 5%;
     color: #B4B6BF;
     font-size: 1rem;
     text-align: left;
+    margin-top: 3%;
 }
 
 .container-main .right-space .comments {
@@ -264,48 +261,188 @@ a {
     justify-content: center;
 }
 
-.container-main .left-space .card .card-img .card-img-aux img{
+.container-main .left-space .card .card-img .card-img-aux img {
     position: relative;
     top: 0.2rem;
     right: -0.2rem;
     width: 12rem;
 }
 
-.container-main .left-space .card .card-description{
+.container-main .left-space .card .card-description {
     width: 80%;
     height: 30%;
     margin: 5% 10% 0 10%;
     display: flex;
     flex-direction: column;
 }
-.container-main .left-space .card .card-description .number{
+
+.container-main .left-space .card .card-description .number {
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
     letter-spacing: 2px;
 }
-.container-main .left-space .card .card-description .description{
+
+.container-main .left-space .card .card-description .description {
     margin-top: -0.5rem;
     font-size: 1rem;
     font-weight: 700;
     color: #B4B6BF;
     margin-bottom: 1rem;
 }
-.container-main .left-space .card .card-description .information{
+
+.container-main .left-space .card .card-description .information {
     font-size: 0.9rem;
     text-align: justify;
 }
 
+.container-menu .menu .icon-responsive {
+    display: none;
+}
+
+.container-menu .menu .icon-responsive button {
+    border: none;
+    background-color: transparent;
+    color: #B4B6BF;
+    cursor: pointer;
+}
+
+.menu-links-hiden {
+    display: none;
+    position: absolute;
+    top: 8rem;
+    right: 30%;
+    width: 50%;
+    height: 4vh;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-color: #212325;
+    box-shadow: 0 0 10px 0 #b4b6bf93
+}
+
+.menu-links-hiden a {
+    color: #B4B6BF;
+    font-size: 0.9rem;
+
+}
+
 /*responsive deign*/
 
-@media screen and (max-width: 1415px){
+@media screen and (max-width: 1415px) {
     .container-main .right-space .description {
         margin-top: 10%;
     }
 }
 
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1300px) {
     .container-main .left-space .card .card-header .aux {
         width: 15%;
+    }
+}
+
+@media screen and (max-width: 972px) {
+    .container-menu .menu .menu-links {
+        display: none;
+    }
+
+    .container-menu .menu .menu-login {
+        width: 50%;
+    }
+
+    .container-main .right-space .title {
+        font-size: 4rem;
+    }
+
+    .container-main .right-space .title span {
+        font-size: 4rem;
+    }
+
+    .container-menu .menu .icon-responsive {
+        display: block;
+    }
+
+    .container-main .left-space .card .card-img .card-img-aux {
+        height: 180px;
+        width: 180px;
+    }
+
+    .container-main .left-space .card .card-img .card-img-aux img {
+        width: 10rem;
+    }
+
+    .container-main .left-space .card .card-header .aux {
+        width: 20%;
+    }
+
+    .container-main {
+        margin-top: 10%;
+    }
+
+    .container-main .right-space .description {
+        margin-top: 0rem;
+    }
+
+    .container-main .right-space .comments .comments-descriptions {
+        font-size: 1rem;
+    }
+
+    .container-main .right-space .comments .quotation-marks {
+        font-size: 4rem;
+    }
+
+    .container-main .right-space .comments .perfil .perfil-description {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .container-main {
+        margin-top: 4rem;
+        flex-direction: column;
+    }
+
+    .container-main .right-space {
+        width: 100%;
+        margin: 0;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-main .right-space .title {
+        font-size: 3rem;
+    }
+
+    .container-main .right-space .title span {
+        font-size: 3rem;
+    }
+
+    .container-main .right-space .description {
+        font-size: 1rem;
+        margin-top: 3rem;
+    }
+
+    .container-main .right-space .comments .comments-descriptions {
+        width: 90%;
+    }
+
+    .container-main .left-space {
+        width: 100%;
+        margin-top: 4rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-main .left-space .card {
+        margin: 0 10% 0 10%;
+        height: 30rem;
+    }
+
+}
+
+@media screen and (max-height: 1000px){
+    .container-main .right-space .description{
+        margin-top: 6rem;
     }
 }
